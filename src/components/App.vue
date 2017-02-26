@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- <div class="well">{{ state }}</div> -->
     <toolbar></toolbar>
     <notes-list></notes-list>
     <editor></editor>
@@ -12,6 +13,8 @@
   import Editor from './Editor.vue'
 
   export default {
+    name: 'app',
+    data() { return { state: this.$store.state } },
     components: {
       Toolbar,
       NotesList,

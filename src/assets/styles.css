@@ -13,6 +13,10 @@ body {
   position: relative;
 }
 
+#main {
+  height: 100%
+}
+
 #toolbar {
   float: left;
   width: 80px;

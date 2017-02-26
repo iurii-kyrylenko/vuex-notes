@@ -1,6 +1,6 @@
 # vuex-notes
 
-> Following a vuex tutorial: https://coligo.io/learn-vuex-by-building-notes-app/
+> Updaing vuex tutorial (vue 2.1.0, vuex 2.1.3): https://coligo.io/learn-vuex-by-building-notes-app/
 
 ## Build Setup
 

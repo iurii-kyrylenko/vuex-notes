@@ -1,10 +1,13 @@
 <template>
-  <div id="editor">
-    <div>editor</div>
+  <div id="note-editor">
+    <textarea
+      class="form-control">
+    </textarea>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'editor'
 }
 </script>
