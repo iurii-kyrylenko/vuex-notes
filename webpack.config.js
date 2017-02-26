@@ -33,7 +33,7 @@ module.exports = {
       },
 
       //------------------
-      // for bootstrap.css
+      // loaders needed for bootstrap.css:
       // https://gist.github.com/vedovelli/bb098681849b9d10e240
       // https://forum-archive.vuejs.org/topic/1403/how-to-integrate-bootstrap-to-vue-js/4
       {

@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+
 html, #app {
   height: 100%;
 }
@@ -84,8 +86,4 @@ body {
 
 .starred {
   color: #F7AE4F;
-}
-
-.test {
-  color: green;
 }

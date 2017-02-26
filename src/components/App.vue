@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <div class="well test">TEST</div>
+    <toolbar></toolbar>
+    <notes-list></notes-list>
+    <editor></editor>
   </div>
 </template>
 
 <script>
-export default {
-}
+  import Toolbar from './Toolbar.vue'
+  import NotesList from './NotesList.vue'
+  import Editor from './Editor.vue'
+
+  export default {
+    components: {
+      Toolbar,
+      NotesList,
+      Editor
+    }
+  }
 </script>
 
-<style src="bootstrap/dist/css/bootstrap.css">
-</style>
-
-<style src="../assets/styles.css">
-</style>
-
+<style src="bootstrap/dist/css/bootstrap.css"></style>
+<style src="../assets/styles.css"></style>
