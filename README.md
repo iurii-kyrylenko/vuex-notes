@@ -29,7 +29,7 @@ the `filter` method was used:
 state.notes = state.notes.filter(note => note != state.activeNote)
 ```
 
-* All `mutations`, `actions` and `getters` declared locally in the [store.js](./src/components/store.js) and referenced in the `Vuex.Store` instance. Used vuex API `mapActions` and `mapGetters` to map store actions/getters to the components properties.
+* All `mutations`, `actions` and `getters` declared locally in the [store.js](src/components/store.js) and referenced in the `Vuex.Store` instance. Used vuex API `mapActions` and `mapGetters` to map store actions/getters to the components properties.
 
 * Fixed incorrect behavior in case when note list is empty and active note doesn't exist.
 
