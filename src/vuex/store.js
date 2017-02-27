@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 const state = {
   notes: [],
-  activeNote: {}
+  activeNote: undefined
 }
 
 const mutations = {

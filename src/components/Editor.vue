@@ -1,6 +1,7 @@
 <template>
   <div id="note-editor">
     <textarea
+      v-if="activeNote"
       :value="activeNote.text"
       @input="editNote($event.target.value)"
       class="form-control">
