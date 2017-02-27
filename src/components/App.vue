@@ -14,7 +14,7 @@
 
   export default {
     name: 'app',
-    data() { return { state: this.$store.state } },
+    // data() { return { state: this.$store.state } },
     components: {
       Toolbar,
       NotesList,

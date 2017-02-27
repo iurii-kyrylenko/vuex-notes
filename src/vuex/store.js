@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { addNote } from './actions'
 
 Vue.use(Vuex)
 
@@ -24,7 +23,7 @@ const mutations = {
   },
 
   DELETE_NOTE (state) {
-    state.notes = state.notes.filter(note => n != state.activeNote);
+    state.notes = state.notes.filter(note => note != state.activeNote);
     state.activeNote = state.notes[0]
   },
 
@@ -37,16 +36,22 @@ const mutations = {
   }
 }
 
+const actions = {
+  addNote:          ({commit})         => commit('ADD_NOTE'),
+  editNote:         ({ commit }, text) => commit('EDIT_NOTE', text),
+  deleteNote:       ({ commit })       => commit('DELETE_NOTE'),
+  updateActiveNote: ({ commit }, note) => commit('SET_ACTIVE_NOTE', note),
+  toggleFavorite:   ({ commit })       => commit('TOGGLE_FAVORITE')
+}
+
+const getters = {
+  notes:      state => state.notes,
+  activeNote: state => state.activeNote
+}
+
 export default new Vuex.Store({
   state,
   mutations,
-  actions: { addNote },
-  // actions: {
-  //   addNote(context) {
-  //     context.commit('ADD_NOTE')
-  //   }
-  // },
-  getters: {
-    activeNote: state => state.activeNote
-  },
+  actions,
+  getters
 })
